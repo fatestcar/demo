@@ -19,10 +19,9 @@ int main(){
 
     delay(1000);
 
-    turnTo(-45);
+    turnTo(0);
 
-    delay(1000);
-
+    delay(10000);
 
     stopLeft();
     stopRight();
