@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/law/project/EmbeddedSystemNJU2018-Demo/lib 
+CXX_INCLUDES = -I/Users/law/project/demo/examples/GPIO -I/Users/law/project/demo/lib 
 

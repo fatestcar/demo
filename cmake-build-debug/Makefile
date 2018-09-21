@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/law/project/EmbeddedSystemNJU2018-Demo
+CMAKE_SOURCE_DIR = /Users/law/project/demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/law/project/EmbeddedSystemNJU2018-Demo/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/law/project/demo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/EmbeddedSystemNJU2018-Demo/cmake-build-debug/CMakeFiles /Users/law/project/EmbeddedSystemNJU2018-Demo/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/cmake-build-debug/CMakeFiles /Users/law/project/demo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/EmbeddedSystemNJU2018-Demo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named EmbeddedSystemNJU2018_Demo
+# Target rules for targets named demo
 
 # Build rule for target.
-EmbeddedSystemNJU2018_Demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 EmbeddedSystemNJU2018_Demo
-.PHONY : EmbeddedSystemNJU2018_Demo
+demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
 
 # fast build rule for target.
-EmbeddedSystemNJU2018_Demo/fast:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build
-.PHONY : EmbeddedSystemNJU2018_Demo/fast
+demo/fast:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
 
 Basic_Principle/GPIO/DCmotors.o: Basic_Principle/GPIO/DCmotors.cpp.o
 
@@ -129,7 +129,7 @@ Basic_Principle/GPIO/DCmotors.o: Basic_Principle/GPIO/DCmotors.cpp.o
 
 # target to build an object file
 Basic_Principle/GPIO/DCmotors.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o
 .PHONY : Basic_Principle/GPIO/DCmotors.cpp.o
 
 Basic_Principle/GPIO/DCmotors.i: Basic_Principle/GPIO/DCmotors.cpp.i
@@ -138,7 +138,7 @@ Basic_Principle/GPIO/DCmotors.i: Basic_Principle/GPIO/DCmotors.cpp.i
 
 # target to preprocess a source file
 Basic_Principle/GPIO/DCmotors.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/DCmotors.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.i
 .PHONY : Basic_Principle/GPIO/DCmotors.cpp.i
 
 Basic_Principle/GPIO/DCmotors.s: Basic_Principle/GPIO/DCmotors.cpp.s
@@ -147,7 +147,7 @@ Basic_Principle/GPIO/DCmotors.s: Basic_Principle/GPIO/DCmotors.cpp.s
 
 # target to generate assembly for a file
 Basic_Principle/GPIO/DCmotors.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/DCmotors.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.s
 .PHONY : Basic_Principle/GPIO/DCmotors.cpp.s
 
 Basic_Principle/GPIO/decoderISR.o: Basic_Principle/GPIO/decoderISR.cpp.o
@@ -156,7 +156,7 @@ Basic_Principle/GPIO/decoderISR.o: Basic_Principle/GPIO/decoderISR.cpp.o
 
 # target to build an object file
 Basic_Principle/GPIO/decoderISR.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/decoderISR.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.o
 .PHONY : Basic_Principle/GPIO/decoderISR.cpp.o
 
 Basic_Principle/GPIO/decoderISR.i: Basic_Principle/GPIO/decoderISR.cpp.i
@@ -165,7 +165,7 @@ Basic_Principle/GPIO/decoderISR.i: Basic_Principle/GPIO/decoderISR.cpp.i
 
 # target to preprocess a source file
 Basic_Principle/GPIO/decoderISR.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/decoderISR.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.i
 .PHONY : Basic_Principle/GPIO/decoderISR.cpp.i
 
 Basic_Principle/GPIO/decoderISR.s: Basic_Principle/GPIO/decoderISR.cpp.s
@@ -174,7 +174,7 @@ Basic_Principle/GPIO/decoderISR.s: Basic_Principle/GPIO/decoderISR.cpp.s
 
 # target to generate assembly for a file
 Basic_Principle/GPIO/decoderISR.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/decoderISR.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.s
 .PHONY : Basic_Principle/GPIO/decoderISR.cpp.s
 
 Basic_Principle/GPIO/servo.o: Basic_Principle/GPIO/servo.cpp.o
@@ -183,7 +183,7 @@ Basic_Principle/GPIO/servo.o: Basic_Principle/GPIO/servo.cpp.o
 
 # target to build an object file
 Basic_Principle/GPIO/servo.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/servo.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.o
 .PHONY : Basic_Principle/GPIO/servo.cpp.o
 
 Basic_Principle/GPIO/servo.i: Basic_Principle/GPIO/servo.cpp.i
@@ -192,7 +192,7 @@ Basic_Principle/GPIO/servo.i: Basic_Principle/GPIO/servo.cpp.i
 
 # target to preprocess a source file
 Basic_Principle/GPIO/servo.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/servo.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.i
 .PHONY : Basic_Principle/GPIO/servo.cpp.i
 
 Basic_Principle/GPIO/servo.s: Basic_Principle/GPIO/servo.cpp.s
@@ -201,7 +201,7 @@ Basic_Principle/GPIO/servo.s: Basic_Principle/GPIO/servo.cpp.s
 
 # target to generate assembly for a file
 Basic_Principle/GPIO/servo.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/Basic_Principle/GPIO/servo.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.s
 .PHONY : Basic_Principle/GPIO/servo.cpp.s
 
 examples/GPIO/DCmotors.o: examples/GPIO/DCmotors.cpp.o
@@ -210,7 +210,7 @@ examples/GPIO/DCmotors.o: examples/GPIO/DCmotors.cpp.o
 
 # target to build an object file
 examples/GPIO/DCmotors.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/DCmotors.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.o
 .PHONY : examples/GPIO/DCmotors.cpp.o
 
 examples/GPIO/DCmotors.i: examples/GPIO/DCmotors.cpp.i
@@ -219,7 +219,7 @@ examples/GPIO/DCmotors.i: examples/GPIO/DCmotors.cpp.i
 
 # target to preprocess a source file
 examples/GPIO/DCmotors.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/DCmotors.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.i
 .PHONY : examples/GPIO/DCmotors.cpp.i
 
 examples/GPIO/DCmotors.s: examples/GPIO/DCmotors.cpp.s
@@ -228,7 +228,7 @@ examples/GPIO/DCmotors.s: examples/GPIO/DCmotors.cpp.s
 
 # target to generate assembly for a file
 examples/GPIO/DCmotors.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/DCmotors.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.s
 .PHONY : examples/GPIO/DCmotors.cpp.s
 
 examples/GPIO/decoderISR.o: examples/GPIO/decoderISR.cpp.o
@@ -237,7 +237,7 @@ examples/GPIO/decoderISR.o: examples/GPIO/decoderISR.cpp.o
 
 # target to build an object file
 examples/GPIO/decoderISR.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/decoderISR.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.o
 .PHONY : examples/GPIO/decoderISR.cpp.o
 
 examples/GPIO/decoderISR.i: examples/GPIO/decoderISR.cpp.i
@@ -246,7 +246,7 @@ examples/GPIO/decoderISR.i: examples/GPIO/decoderISR.cpp.i
 
 # target to preprocess a source file
 examples/GPIO/decoderISR.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/decoderISR.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.i
 .PHONY : examples/GPIO/decoderISR.cpp.i
 
 examples/GPIO/decoderISR.s: examples/GPIO/decoderISR.cpp.s
@@ -255,8 +255,35 @@ examples/GPIO/decoderISR.s: examples/GPIO/decoderISR.cpp.s
 
 # target to generate assembly for a file
 examples/GPIO/decoderISR.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/decoderISR.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.s
 .PHONY : examples/GPIO/decoderISR.cpp.s
+
+examples/GPIO/demo.o: examples/GPIO/demo.cpp.o
+
+.PHONY : examples/GPIO/demo.o
+
+# target to build an object file
+examples/GPIO/demo.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o
+.PHONY : examples/GPIO/demo.cpp.o
+
+examples/GPIO/demo.i: examples/GPIO/demo.cpp.i
+
+.PHONY : examples/GPIO/demo.i
+
+# target to preprocess a source file
+examples/GPIO/demo.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/demo.cpp.i
+.PHONY : examples/GPIO/demo.cpp.i
+
+examples/GPIO/demo.s: examples/GPIO/demo.cpp.s
+
+.PHONY : examples/GPIO/demo.s
+
+# target to generate assembly for a file
+examples/GPIO/demo.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/demo.cpp.s
+.PHONY : examples/GPIO/demo.cpp.s
 
 examples/GPIO/servo.o: examples/GPIO/servo.cpp.o
 
@@ -264,7 +291,7 @@ examples/GPIO/servo.o: examples/GPIO/servo.cpp.o
 
 # target to build an object file
 examples/GPIO/servo.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/servo.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o
 .PHONY : examples/GPIO/servo.cpp.o
 
 examples/GPIO/servo.i: examples/GPIO/servo.cpp.i
@@ -273,7 +300,7 @@ examples/GPIO/servo.i: examples/GPIO/servo.cpp.i
 
 # target to preprocess a source file
 examples/GPIO/servo.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/servo.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/servo.cpp.i
 .PHONY : examples/GPIO/servo.cpp.i
 
 examples/GPIO/servo.s: examples/GPIO/servo.cpp.s
@@ -282,7 +309,7 @@ examples/GPIO/servo.s: examples/GPIO/servo.cpp.s
 
 # target to generate assembly for a file
 examples/GPIO/servo.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/GPIO/servo.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/servo.cpp.s
 .PHONY : examples/GPIO/servo.cpp.s
 
 examples/OpenCV/main.o: examples/OpenCV/main.cpp.o
@@ -291,7 +318,7 @@ examples/OpenCV/main.o: examples/OpenCV/main.cpp.o
 
 # target to build an object file
 examples/OpenCV/main.cpp.o:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/OpenCV/main.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o
 .PHONY : examples/OpenCV/main.cpp.o
 
 examples/OpenCV/main.i: examples/OpenCV/main.cpp.i
@@ -300,7 +327,7 @@ examples/OpenCV/main.i: examples/OpenCV/main.cpp.i
 
 # target to preprocess a source file
 examples/OpenCV/main.cpp.i:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/OpenCV/main.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/main.cpp.i
 .PHONY : examples/OpenCV/main.cpp.i
 
 examples/OpenCV/main.s: examples/OpenCV/main.cpp.s
@@ -309,7 +336,7 @@ examples/OpenCV/main.s: examples/OpenCV/main.cpp.s
 
 # target to generate assembly for a file
 examples/OpenCV/main.cpp.s:
-	$(MAKE) -f CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/build.make CMakeFiles/EmbeddedSystemNJU2018_Demo.dir/examples/OpenCV/main.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/main.cpp.s
 .PHONY : examples/OpenCV/main.cpp.s
 
 # Help Target
@@ -320,7 +347,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... EmbeddedSystemNJU2018_Demo"
+	@echo "... demo"
 	@echo "... Basic_Principle/GPIO/DCmotors.o"
 	@echo "... Basic_Principle/GPIO/DCmotors.i"
 	@echo "... Basic_Principle/GPIO/DCmotors.s"
@@ -336,6 +363,9 @@ help:
 	@echo "... examples/GPIO/decoderISR.o"
 	@echo "... examples/GPIO/decoderISR.i"
 	@echo "... examples/GPIO/decoderISR.s"
+	@echo "... examples/GPIO/demo.o"
+	@echo "... examples/GPIO/demo.i"
+	@echo "... examples/GPIO/demo.s"
 	@echo "... examples/GPIO/servo.o"
 	@echo "... examples/GPIO/servo.i"
 	@echo "... examples/GPIO/servo.s"
