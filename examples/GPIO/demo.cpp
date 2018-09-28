@@ -17,7 +17,7 @@ int main(){
     delay(1000);
 
     delay(1000);
-    delay(1000);
+    delay(1000000);
     stopLeft();
     stopRight();
     return 0;
