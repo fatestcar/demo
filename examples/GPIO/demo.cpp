@@ -10,22 +10,16 @@ using namespace GPIO;
 int main(){
 
     init();
+    turnTo(0);
 
     controlLeft(FORWARD,50);
     controlRight(FORWARD,50);
     delay(1000);
 
-    turnTo(45);
-
     delay(1000);
-
-    turnTo(0);
-
-    delay(10000);
-
+    delay(1000);
     stopLeft();
     stopRight();
-
     return 0;
 
 }
