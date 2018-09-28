@@ -43,9 +43,10 @@ int main()
     clog<<"Frame Size: "<<dWidth<<"x"<<dHeight<<endl;
 
     Mat image;
-    init();
-    controlLeft(FORWARD,50);
-    controlRight(FORWARD,50);
+//    init();
+//    controlLeft(FORWARD,50);
+//    controlRight(FORWARD,50);
+//    turnTo(0);
     double integral,error,derivative,previous_error = 0,results;
     int current_angle = 0;
     while(true)
@@ -120,9 +121,10 @@ int main()
         overlayedText<<"Lines: "<<lines.size();
         putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
         imshow(MAIN_WINDOW_NAME,result);
+        imwrite("0.jpg", result);
         lines.clear();
-        stopLeft();
-        stopRight();
+//        stopLeft();
+//        stopRight();
         waitKey(1);
     }
     return 0;

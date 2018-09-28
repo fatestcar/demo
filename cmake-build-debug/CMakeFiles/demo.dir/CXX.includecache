@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/law/project/demo/Basic Principle/GPIO/DCmotors.cpp
+wiringPi.h
+-
+softPwm.h
+-
+
+/Users/law/project/demo/Basic Principle/GPIO/decoderISR.cpp
+cstdio
+-
+wiringPi.h
+-
+softPwm.h
+-
+
+/Users/law/project/demo/Basic Principle/GPIO/servo.cpp
+wiringPi.h
+-
+
+/Users/law/project/demo/examples/GPIO/DCmotors.cpp
+GPIOlib.h
+/Users/law/project/demo/examples/GPIO/GPIOlib.h
+
+/Users/law/project/demo/examples/GPIO/GPIOlib.h
+
+/Users/law/project/demo/examples/GPIO/decoderISR.cpp
+cstdio
+-
+cmath
+-
+GPIOlib.h
+/Users/law/project/demo/examples/GPIO/GPIOlib.h
+
+/Users/law/project/demo/examples/GPIO/demo.cpp
+GPIOlib.h
+/Users/law/project/demo/examples/GPIO/GPIOlib.h
+
+/Users/law/project/demo/examples/GPIO/servo.cpp
+GPIOlib.h
+/Users/law/project/demo/examples/GPIO/GPIOlib.h
+
+/Users/law/project/demo/examples/OpenCV/main.cpp
+cstdlib
+-
+iostream
+-
+vector
+-
+opencv2/highgui.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/opencv.hpp
+-
+
