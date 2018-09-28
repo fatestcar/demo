@@ -5,7 +5,7 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
-#include "GPIOlib.h"
+//#include "GPIOlib.h"
 
 
 #define PI 3.1415926
@@ -15,7 +15,7 @@
 
 using namespace cv;
 using namespace std;
-using namespace GPIO;
+//using namespace GPIO;
 
 const string CAM_PATH="/dev/video0";
 const string MAIN_WINDOW_NAME="Processed Image";
@@ -85,7 +85,7 @@ int main()
             }
             error = theta;
             integral = integral + error;
-            if (error = 0) {
+            if (error == 0) {
                 integral = 0;
             }
             if ( abs(error) > 40) {
@@ -97,7 +97,7 @@ int main()
             // 这里的result 就是得出的应该调整的角度 调整-result
             int angle = -(results*90/PI);
             current_angle+=angle;
-            turnTo(current_angle);
+//            turnTo(current_angle);
 
             // 这里直接把两条线输入进去然后产生结果
 
