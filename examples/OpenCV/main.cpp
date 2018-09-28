@@ -59,6 +59,7 @@ int main()
 
         // 显示初步轮廓处理之后的结果
         imshow(CANNY_WINDOW_NAME,contours);
+        imwrite("1.jpg",contours);
         waitKey(1);
 
         vector<Vec2f> lines;
@@ -125,6 +126,7 @@ int main()
         lines.clear();
 //        stopLeft();
 //        stopRight();
+        break;
         waitKey(1);
     }
     return 0;
