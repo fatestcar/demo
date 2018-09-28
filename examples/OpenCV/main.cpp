@@ -46,6 +46,7 @@ int main()
     init();
     controlLeft(FORWARD,4);
     controlRight(FORWARD,4);
+    delay(10000000);
     double integral,error,derivative,previous_error = 0,results;
     int current_angle = 0;
     for(int i =0;i<1000000;i++)
