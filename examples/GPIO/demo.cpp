@@ -12,14 +12,14 @@ int main(){
     init();
     turnTo(0);
 
-    controlLeft(FORWARD,50);
-    controlRight(FORWARD,50);
-    delay(1000);
-
-    delay(1000);
-    delay(1000);
-    stopLeft();
-    stopRight();
+//    controlLeft(FORWARD,50);
+//    controlRight(FORWARD,50);
+//    delay(1000);
+//
+//    delay(1000);
+//    delay(1000);
+//    stopLeft();
+//    stopRight();
     return 0;
 
 }
