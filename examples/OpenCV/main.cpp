@@ -6,6 +6,7 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 #include "GPIOlib.h"
+#include <thread>
 
 
 #define PI 3.1415926
@@ -29,6 +30,15 @@ const double Kp = 0.5;
 const double Ki = 0.2;
 const double Kd = 0.1;
 
+void car(){
+    init();
+    controlLeft(FORWARD,4);
+    controlRight(FORWARD,4);
+    delay(10000000);
+    stopLeft();
+    stopRight();
+}
+
 int main()
 {
     VideoCapture capture(CAM_PATH);
@@ -43,13 +53,11 @@ int main()
     clog<<"Frame Size: "<<dWidth<<"x"<<dHeight<<endl;
 
     Mat image;
-    init();
-    controlLeft(FORWARD,4);
-    controlRight(FORWARD,4);
-    delay(10000000);
+
+    thread th1(car);
     double integral,error,derivative,previous_error = 0,results;
     int current_angle = 0;
-    for(int i =0;i<1000000;i++)
+    for(int i =0;i<1000;i++)
     {
         capture>>image;
         if(image.empty())
@@ -59,8 +67,8 @@ int main()
 
         // 显示初步轮廓处理之后的结果
         imshow(CANNY_WINDOW_NAME,contours);
-        if(i%10000 == 0){
-            int number = (i%10000);
+        if(i%100 == 0){
+            int number = (i%100);
             imwrite("image_canny/"+to_string(number)+".jpg", contours);
         }
         waitKey(1);
@@ -125,13 +133,11 @@ int main()
         overlayedText<<"Lines: "<<lines.size();
         putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
         imshow(MAIN_WINDOW_NAME,result);
-        if(i%10000 == 0){
-            int number = (i%10000);
+        if(i%10 == 0){
+            int number = (i%10);
             imwrite("image_line/"+to_string(number)+".jpg", result);
         }
         lines.clear();
-        stopLeft();
-        stopRight();
         waitKey(1);
     }
     return 0;
