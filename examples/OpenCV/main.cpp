@@ -67,10 +67,9 @@ int main()
 
         // 显示初步轮廓处理之后的结果
         imshow(CANNY_WINDOW_NAME,contours);
-        if(i%100 == 0){
-            int number = (i%100);
-            imwrite("image_canny/"+to_string(number)+".jpg", contours);
-        }
+        int number = (i);
+        imwrite("image_canny/"+to_string(number)+".jpg", contours);
+
         waitKey(1);
 
         vector<Vec2f> lines;
@@ -133,10 +132,8 @@ int main()
         overlayedText<<"Lines: "<<lines.size();
         putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
         imshow(MAIN_WINDOW_NAME,result);
-        if(i%10 == 0){
-            int number = (i%10);
-            imwrite("image_line/"+to_string(number)+".jpg", result);
-        }
+        number = (i);
+        imwrite("image_line/"+to_string(number)+".jpg", result);
         lines.clear();
         waitKey(1);
     }
