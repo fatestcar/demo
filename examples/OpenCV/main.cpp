@@ -43,13 +43,12 @@ int main()
     clog<<"Frame Size: "<<dWidth<<"x"<<dHeight<<endl;
 
     Mat image;
-//    init();
-//    controlLeft(FORWARD,50);
-//    controlRight(FORWARD,50);
-//    turnTo(0);
+    init();
+    controlLeft(FORWARD,4);
+    controlRight(FORWARD,4);
     double integral,error,derivative,previous_error = 0,results;
     int current_angle = 0;
-    while(true)
+    for(int i =0;i<1000000;i++)
     {
         capture>>image;
         if(image.empty())
@@ -59,6 +58,10 @@ int main()
 
         // 显示初步轮廓处理之后的结果
         imshow(CANNY_WINDOW_NAME,contours);
+        if(i%10000 == 0){
+            int number = (i%10000);
+            imwrite("image_canny/"+to_string(number)+".jpg", contours);
+        }
         waitKey(1);
 
         vector<Vec2f> lines;
@@ -121,10 +124,13 @@ int main()
         overlayedText<<"Lines: "<<lines.size();
         putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
         imshow(MAIN_WINDOW_NAME,result);
+        if(i%10000 == 0){
+            int number = (i%10000);
+            imwrite("image_line/"+to_string(number)+".jpg", result);
+        }
         lines.clear();
-//        stopLeft();
-//        stopRight();
-        break;
+        stopLeft();
+        stopRight();
         waitKey(1);
     }
     return 0;
