@@ -123,11 +123,9 @@ int main()
         imshow(MAIN_WINDOW_NAME,result);
         imwrite("0.jpg", result);
         lines.clear();
-
 //        stopLeft();
 //        stopRight();
         waitKey(1);
-        break;
     }
     return 0;
 }
