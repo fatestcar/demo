@@ -5,7 +5,7 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
-//#include "GPIOlib.h"
+#include "GPIOlib.h"
 
 
 #define PI 3.1415926
@@ -15,7 +15,7 @@
 
 using namespace cv;
 using namespace std;
-//using namespace GPIO;
+using namespace GPIO;
 
 const string CAM_PATH="/dev/video0";
 const string MAIN_WINDOW_NAME="Processed Image";
@@ -59,7 +59,6 @@ int main()
 
         // 显示初步轮廓处理之后的结果
         imshow(CANNY_WINDOW_NAME,contours);
-        imwrite("1.jpg",contours);
         waitKey(1);
 
         vector<Vec2f> lines;
@@ -122,7 +121,6 @@ int main()
         overlayedText<<"Lines: "<<lines.size();
         putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
         imshow(MAIN_WINDOW_NAME,result);
-        imwrite("0.jpg", result);
         lines.clear();
 //        stopLeft();
 //        stopRight();

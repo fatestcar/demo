@@ -12,8 +12,8 @@ int main(){
     init();
     turnTo(0);
     delay(1000);
-    controlLeft(FORWARD,50);
-    controlRight(FORWARD,50);
+    controlLeft(FORWARD,4);
+    controlRight(FORWARD,4);
     delay(1000);
 
     delay(1000);
