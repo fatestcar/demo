@@ -66,7 +66,7 @@ int main()
 //        int number = (i);
         // 直接写到相应到文件夹中去收集图片
 //        imwrite("image/"+to_string(number)+".jpg", contours);
-//        Canny(image,contours,CANNY_LOWER_BOUND,CANNY_UPPER_BOUND);
+        Canny(image,contours,CANNY_LOWER_BOUND,CANNY_UPPER_BOUND);
 
         // 显示初步轮廓处理之后的结果
 //        imshow(CANNY_WINDOW_NAME,contours);
