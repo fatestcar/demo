@@ -31,10 +31,9 @@ const double Ki = 0.2;
 const double Kd = 0.1;
 
 void car(){
-    cout<<"car init"<<endl;
     init();
-    controlLeft(FORWARD,10);
-    controlRight(FORWARD,10);
+    controlLeft(FORWARD,4);
+    controlRight(FORWARD,4);
     delay(10000000);
     stopLeft();
     stopRight();
@@ -64,81 +63,81 @@ int main()
         if(image.empty())
             break;
         Mat contours;
-        int number = (i);
+//        int number = (i);
         // 直接写到相应到文件夹中去收集图片
-        imwrite("image/"+to_string(number)+".jpg", image);
+//        imwrite("image/"+to_string(number)+".jpg", contours);
 //        Canny(image,contours,CANNY_LOWER_BOUND,CANNY_UPPER_BOUND);
 
         // 显示初步轮廓处理之后的结果
 //        imshow(CANNY_WINDOW_NAME,contours);
-//        int number = (i);
-//        imwrite("image/"+to_string(number)+".jpg", contours);
+        int number = (i);
+        imwrite("image/"+to_string(number)+".jpg", contours);
+
+        waitKey(1);
+
+        vector<Vec2f> lines;
+        HoughLines(contours,lines,1,PI/180,HOUGH_THRESHOLD);
+        Mat result(image.size(),CV_8U,Scalar(255));
+        image.copyTo(result);
+        clog<<lines.size()<<endl;
+        cout<<result.size<<endl;
 //
-//        waitKey(1);
-//
-//        vector<Vec2f> lines;
-//        HoughLines(contours,lines,1,PI/180,HOUGH_THRESHOLD);
-//        Mat result(image.size(),CV_8U,Scalar(255));
-//        image.copyTo(result);
-//        clog<<lines.size()<<endl;
-//        cout<<result.size<<endl;
-////
-////        float maxRad=-2*PI;
-////        float minRad=2*PI;
-//        double middle = PI/2;
-//        //Draw the lines and judge the slope
-//        for(vector<Vec2f>::const_iterator it=lines.begin();it!=lines.end();++it)
-//        {
-//
-//            float rho=(*it)[0];			//First element is distance rho
-//            float theta=(*it)[1];		//Second element is angle theta
-//
-//            cout<<rho<<" "<<theta<<endl;
-//            // 如果是向右走，夹角应该是正数， 如果是向左走，夹角应该是负数
-//            if(theta>middle) {
-//                theta = theta - PI;
-//            }
-//            error = theta;
-//            integral = integral + error;
-//            if (error == 0) {
-//                integral = 0;
-//            }
-//            if ( abs(error) > 40) {
-//                integral = 0;
-//            }
-//            derivative = error - previous_error;
-//            previous_error = error;
-//            results = Kp*error + Ki*integral + Kd*derivative;
-//            // 这里的result 就是得出的应该调整的角度 调整-result
-//            int angle = -(results*90/PI);
-//            current_angle+=angle;
-////            turnTo(current_angle);
-//
-//            // 这里直接把两条线输入进去然后产生结果
-//
-//            if(true||(theta>0.09&&theta<1.48)||(theta>1.62&&theta<3.05))
-//            {
-////                if(theta>maxRad)
-////                    maxRad=theta;
-////                if(theta<minRad)
-////                    minRad=theta;
-//
-//                //point of intersection of the line with first row
-//                Point pt1(rho/cos(theta),0);
-//                //point of intersection of the line with last row
-//                Point pt2((rho-result.rows*sin(theta))/cos(theta),result.rows);
-//                //Draw a line
-//                line(result,pt1,pt2,Scalar(0,255,255),3,CV_AA);
-//            }
-//            clog<<"Line: ("<<rho<<","<<theta<<")\n";
-//        }
-//        stringstream overlayedText;
-//        overlayedText<<"Lines: "<<lines.size();
-//        putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
-//        imshow(MAIN_WINDOW_NAME,result);
-//        number = (i);
-//        imwrite("image_line/"+to_string(number)+".jpg", result);
-//        lines.clear();
+//        float maxRad=-2*PI;
+//        float minRad=2*PI;
+        double middle = PI/2;
+        //Draw the lines and judge the slope
+        for(vector<Vec2f>::const_iterator it=lines.begin();it!=lines.end();++it)
+        {
+
+            float rho=(*it)[0];			//First element is distance rho
+            float theta=(*it)[1];		//Second element is angle theta
+
+            cout<<rho<<" "<<theta<<endl;
+            // 如果是向右走，夹角应该是正数， 如果是向左走，夹角应该是负数
+            if(theta>middle) {
+                theta = theta - PI;
+            }
+            error = theta;
+            integral = integral + error;
+            if (error == 0) {
+                integral = 0;
+            }
+            if ( abs(error) > 40) {
+                integral = 0;
+            }
+            derivative = error - previous_error;
+            previous_error = error;
+            results = Kp*error + Ki*integral + Kd*derivative;
+            // 这里的result 就是得出的应该调整的角度 调整-result
+            int angle = -(results*90/PI);
+            current_angle+=angle;
+//            turnTo(current_angle);
+
+            // 这里直接把两条线输入进去然后产生结果
+
+            if(true||(theta>0.09&&theta<1.48)||(theta>1.62&&theta<3.05))
+            {
+//                if(theta>maxRad)
+//                    maxRad=theta;
+//                if(theta<minRad)
+//                    minRad=theta;
+
+                //point of intersection of the line with first row
+                Point pt1(rho/cos(theta),0);
+                //point of intersection of the line with last row
+                Point pt2((rho-result.rows*sin(theta))/cos(theta),result.rows);
+                //Draw a line
+                line(result,pt1,pt2,Scalar(0,255,255),3,CV_AA);
+            }
+            clog<<"Line: ("<<rho<<","<<theta<<")\n";
+        }
+        stringstream overlayedText;
+        overlayedText<<"Lines: "<<lines.size();
+        putText(result,overlayedText.str(),Point(10,result.rows-10),2,0.8,Scalar(0,0,255),0);
+        imshow(MAIN_WINDOW_NAME,result);
+        number = (i);
+        imwrite("image_line/"+to_string(number)+".jpg", result);
+        lines.clear();
         waitKey(1);
     }
     return 0;
