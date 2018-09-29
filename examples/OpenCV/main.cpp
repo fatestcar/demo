@@ -33,7 +33,7 @@ const double Kd = 0.1;
 void car(){
     init();
     controlLeft(FORWARD,10);
-    controlRight(FORWARD,10);
+    controlRight(FORWARD,5);
     delay(10000000);
     stopLeft();
     stopRight();
