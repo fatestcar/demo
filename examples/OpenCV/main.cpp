@@ -32,8 +32,8 @@ const double Kd = 0.1;
 
 void car(){
     init();
-    controlLeft(FORWARD,4);
-    controlRight(FORWARD,4);
+    controlLeft(FORWARD,10);
+    controlRight(FORWARD,10);
     delay(10000000);
     stopLeft();
     stopRight();
@@ -71,7 +71,7 @@ int main()
         // 显示初步轮廓处理之后的结果
 //        imshow(CANNY_WINDOW_NAME,contours);
         int number = (i);
-        imwrite("image/"+to_string(number)+".jpg", contours);
+        imwrite("image/"+to_string(number)+".jpg", image);
 
         waitKey(1);
 
