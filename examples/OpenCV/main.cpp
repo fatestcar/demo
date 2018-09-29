@@ -31,9 +31,10 @@ const double Ki = 0.2;
 const double Kd = 0.1;
 
 void car(){
+    cout<<"car init"<<endl;
     init();
-    controlLeft(FORWARD,4);
-    controlRight(FORWARD,4);
+    controlLeft(FORWARD,10);
+    controlRight(FORWARD,10);
     delay(10000000);
     stopLeft();
     stopRight();
@@ -65,7 +66,7 @@ int main()
         Mat contours;
         int number = (i);
         // 直接写到相应到文件夹中去收集图片
-        imwrite("image/"+to_string(number)+".jpg", contours);
+        imwrite("image/"+to_string(number)+".jpg", image);
 //        Canny(image,contours,CANNY_LOWER_BOUND,CANNY_UPPER_BOUND);
 
         // 显示初步轮廓处理之后的结果
@@ -138,7 +139,7 @@ int main()
 //        number = (i);
 //        imwrite("image_line/"+to_string(number)+".jpg", result);
 //        lines.clear();
-//        waitKey(1);
+        waitKey(1);
     }
     return 0;
 }
