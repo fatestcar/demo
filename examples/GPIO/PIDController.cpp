@@ -54,7 +54,7 @@ double getOutput(double x){
  */
 double PID_Controller(double pos){
     //设定对前轮中心位置的期望值为0，即前轮中心的位置应该在中轴线上
-    double error=pos;
+    double error=0-pos; //期望值与实际值的偏差，为预期调节量
     lastError=currentError;
     currentError=error;
     sigmaError=sigmaError+error;
