@@ -10,7 +10,7 @@
 #include "GPIOlib.h"
 using namespace GPIO;
 
-const double d_max=30.0;//前轮中心在中轴线右侧的最大距离 单位：cm
+const double d_max=15.0;//前轮中心在中轴线右侧的最大距离 单位：cm
 const double v=5.0;    //恒定速度  单位：cm/s
 const double l_max=45.0;//最大转动角度
 const double kp=0.5;

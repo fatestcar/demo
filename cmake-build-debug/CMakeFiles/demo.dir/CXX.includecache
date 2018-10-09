@@ -6,57 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/law/project/demo/Basic Principle/GPIO/DCmotors.cpp
-wiringPi.h
--
-softPwm.h
--
+/Users/wangruihua/CLionProjects/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/Basic Principle/GPIO/decoderISR.cpp
-cstdio
--
-wiringPi.h
--
-softPwm.h
--
-
-/Users/law/project/demo/Basic Principle/GPIO/servo.cpp
-wiringPi.h
--
-
-/Users/law/project/demo/examples/GPIO/DCmotors.cpp
+/Users/wangruihua/CLionProjects/demo/examples/GPIO/demo.cpp
 GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
+/Users/wangruihua/CLionProjects/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
-
-/Users/law/project/demo/examples/GPIO/decoderISR.cpp
-cstdio
--
-cmath
--
-GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
-
-/Users/law/project/demo/examples/GPIO/demo.cpp
-GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
-
-/Users/law/project/demo/examples/GPIO/servo.cpp
-GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
-
-/Users/law/project/demo/examples/OpenCV/main.cpp
-cstdlib
--
+/Users/wangruihua/CLionProjects/demo/simulator/Simulator.cpp
 iostream
 -
-vector
--
-opencv2/highgui.hpp
--
-opencv2/imgproc.hpp
--
-opencv2/opencv.hpp
+Simulator.h
+/Users/wangruihua/CLionProjects/demo/simulator/Simulator.h
+
+/Users/wangruihua/CLionProjects/demo/simulator/Simulator.h
+string
+/Users/wangruihua/CLionProjects/demo/simulator/string
+
+/Users/wangruihua/CLionProjects/demo/simulator/main.cpp
+iostream
 -
 

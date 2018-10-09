@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o"
   "CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o"
   "CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o"
+  "CMakeFiles/demo.dir/simulator/Simulator.cpp.o"
+  "CMakeFiles/demo.dir/simulator/main.cpp.o"
   "demo.pdb"
   "demo"
 )

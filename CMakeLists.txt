@@ -15,4 +15,4 @@ add_executable(demo
         examples/GPIO/GPIOlib.h
         examples/GPIO/servo.cpp
         examples/OpenCV/main.cpp
-        lib/GPIOlib.h examples/GPIO/demo.cpp)
+        lib/GPIOlib.h examples/GPIO/demo.cpp simulator/Simulator.cpp simulator/Simulator.h simulator/main.cpp examples/GPIO/PIDController.cpp)

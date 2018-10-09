@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/law/project/demo
+CMAKE_SOURCE_DIR = /Users/wangruihua/CLionProjects/demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/law/project/demo/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/wangruihua/CLionProjects/demo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/cmake-build-debug/CMakeFiles /Users/law/project/demo/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles /Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -339,6 +339,60 @@ examples/OpenCV/main.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/main.cpp.s
 .PHONY : examples/OpenCV/main.cpp.s
 
+simulator/Simulator.o: simulator/Simulator.cpp.o
+
+.PHONY : simulator/Simulator.o
+
+# target to build an object file
+simulator/Simulator.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/simulator/Simulator.cpp.o
+.PHONY : simulator/Simulator.cpp.o
+
+simulator/Simulator.i: simulator/Simulator.cpp.i
+
+.PHONY : simulator/Simulator.i
+
+# target to preprocess a source file
+simulator/Simulator.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/simulator/Simulator.cpp.i
+.PHONY : simulator/Simulator.cpp.i
+
+simulator/Simulator.s: simulator/Simulator.cpp.s
+
+.PHONY : simulator/Simulator.s
+
+# target to generate assembly for a file
+simulator/Simulator.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/simulator/Simulator.cpp.s
+.PHONY : simulator/Simulator.cpp.s
+
+simulator/main.o: simulator/main.cpp.o
+
+.PHONY : simulator/main.o
+
+# target to build an object file
+simulator/main.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/simulator/main.cpp.o
+.PHONY : simulator/main.cpp.o
+
+simulator/main.i: simulator/main.cpp.i
+
+.PHONY : simulator/main.i
+
+# target to preprocess a source file
+simulator/main.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/simulator/main.cpp.i
+.PHONY : simulator/main.cpp.i
+
+simulator/main.s: simulator/main.cpp.s
+
+.PHONY : simulator/main.s
+
+# target to generate assembly for a file
+simulator/main.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/simulator/main.cpp.s
+.PHONY : simulator/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -372,6 +426,12 @@ help:
 	@echo "... examples/OpenCV/main.o"
 	@echo "... examples/OpenCV/main.i"
 	@echo "... examples/OpenCV/main.s"
+	@echo "... simulator/Simulator.o"
+	@echo "... simulator/Simulator.i"
+	@echo "... simulator/Simulator.s"
+	@echo "... simulator/main.o"
+	@echo "... simulator/main.i"
+	@echo "... simulator/main.s"
 .PHONY : help
 
 
