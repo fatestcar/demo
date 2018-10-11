@@ -6,5 +6,9 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/Users/law/Desktop/小车/demo/examples/GPIO -I/Users/law/Desktop/小车/demo/lib 
+=======
+CXX_INCLUDES = -I/Users/wangruihua/CLionProjects/demo/examples/GPIO -I/Users/wangruihua/CLionProjects/demo/lib 
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 

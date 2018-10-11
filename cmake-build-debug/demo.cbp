@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="/Users/law/Desktop/小车/demo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -40,21 +41,61 @@
 			<Target title="demo">
 				<Option output="/Users/law/Desktop/小车/demo/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/law/Desktop/小车/demo/cmake-build-debug"/>
+=======
+				<Option working_dir="/Users/wangruihua/CLionProjects/demo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/wangruihua/CLionProjects/demo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/wangruihua/CLionProjects/demo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo">
+				<Option output="/Users/wangruihua/CLionProjects/demo/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruihua/CLionProjects/demo/cmake-build-debug"/>
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/Users/law/Desktop/小车/demo/examples/GPIO"/>
 					<Add directory="/Users/law/Desktop/小车/demo/lib"/>
+=======
+					<Add directory="/Users/wangruihua/CLionProjects/demo/examples/GPIO"/>
+					<Add directory="/Users/wangruihua/CLionProjects/demo/lib"/>
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/law/Desktop/小车/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/law/Desktop/小车/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/law/Desktop/小车/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -64,21 +105,38 @@
 			<Target title="demo/fast">
 				<Option output="/Users/law/Desktop/小车/demo/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/law/Desktop/小车/demo/cmake-build-debug"/>
+=======
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo/fast">
+				<Option output="/Users/wangruihua/CLionProjects/demo/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruihua/CLionProjects/demo/cmake-build-debug"/>
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/Users/law/Desktop/小车/demo/examples/GPIO"/>
 					<Add directory="/Users/law/Desktop/小车/demo/lib"/>
+=======
+					<Add directory="/Users/wangruihua/CLionProjects/demo/examples/GPIO"/>
+					<Add directory="/Users/wangruihua/CLionProjects/demo/lib"/>
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/law/Desktop/小车/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/law/Desktop/小车/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/law/Desktop/小车/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -123,6 +181,55 @@
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="/Users/law/Desktop/小车/demo/CMakeLists.txt">
+=======
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangruihua/CLionProjects/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/DCmotors.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/decoderISR.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/servo.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/examples/GPIO/DCmotors.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/examples/GPIO/GPIOlib.h">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/examples/GPIO/decoderISR.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/examples/GPIO/demo.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/examples/GPIO/servo.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/examples/OpenCV/main.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/lib/GPIOlib.h">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/simulator/Simulator.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/simulator/Simulator.h">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/simulator/main.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/Users/wangruihua/CLionProjects/demo/CMakeLists.txt">
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

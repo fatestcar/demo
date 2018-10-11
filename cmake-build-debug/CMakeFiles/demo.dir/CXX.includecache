@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /Users/law/Desktop/小车/demo/Basic Principle/GPIO/DCmotors.cpp
 wiringPi.h
 -
@@ -51,15 +52,26 @@ GPIOlib.h
 /Users/law/Desktop/小车/demo/examples/OpenCV/Reader.cpp
 cstdlib
 -
+=======
+/Users/wangruihua/CLionProjects/demo/examples/GPIO/GPIOlib.h
+
+/Users/wangruihua/CLionProjects/demo/examples/GPIO/demo.cpp
+GPIOlib.h
+/Users/wangruihua/CLionProjects/demo/examples/GPIO/GPIOlib.h
+
+/Users/wangruihua/CLionProjects/demo/simulator/Simulator.cpp
 iostream
 -
-vector
--
-opencv2/highgui.hpp
--
-opencv2/imgproc.hpp
--
-opencv2/opencv.hpp
+Simulator.h
+/Users/wangruihua/CLionProjects/demo/simulator/Simulator.h
+
+/Users/wangruihua/CLionProjects/demo/simulator/Simulator.h
+string
+/Users/wangruihua/CLionProjects/demo/simulator/string
+
+/Users/wangruihua/CLionProjects/demo/simulator/main.cpp
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
+iostream
 -
 
 /Users/law/Desktop/小车/demo/examples/OpenCV/main.cpp

@@ -43,10 +43,17 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /Users/law/Desktop/小车/demo
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/law/Desktop/小车/demo/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /Users/wangruihua/CLionProjects/demo
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/wangruihua/CLionProjects/demo/cmake-build-debug
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 
 # Include any dependencies generated for this target.
 include CMakeFiles/demo.dir/depend.make
@@ -59,6 +66,7 @@ include CMakeFiles/demo.dir/flags.make
 
 CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o: ../Basic\ Principle/GPIO/DCmotors.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o -c "/Users/law/Desktop/小车/demo/Basic Principle/GPIO/DCmotors.cpp"
 
@@ -186,6 +194,135 @@ CMakeFiles/demo.dir/examples/test.cpp.i: cmake_force
 CMakeFiles/demo.dir/examples/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/examples/test.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/law/Desktop/小车/demo/examples/test.cpp -o CMakeFiles/demo.dir/examples/test.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.o -c "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/DCmotors.cpp"
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/DCmotors.cpp" > CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.i
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/DCmotors.cpp" -o CMakeFiles/demo.dir/Basic_Principle/GPIO/DCmotors.cpp.s
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.o: ../Basic\ Principle/GPIO/decoderISR.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.o -c "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/decoderISR.cpp"
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/decoderISR.cpp" > CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.i
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/decoderISR.cpp" -o CMakeFiles/demo.dir/Basic_Principle/GPIO/decoderISR.cpp.s
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.o: ../Basic\ Principle/GPIO/servo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.o -c "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/servo.cpp"
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/servo.cpp" > CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.i
+
+CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/wangruihua/CLionProjects/demo/Basic Principle/GPIO/servo.cpp" -o CMakeFiles/demo.dir/Basic_Principle/GPIO/servo.cpp.s
+
+CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.o: ../examples/GPIO/DCmotors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.o -c /Users/wangruihua/CLionProjects/demo/examples/GPIO/DCmotors.cpp
+
+CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/examples/GPIO/DCmotors.cpp > CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.i
+
+CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/examples/GPIO/DCmotors.cpp -o CMakeFiles/demo.dir/examples/GPIO/DCmotors.cpp.s
+
+CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.o: ../examples/GPIO/decoderISR.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.o -c /Users/wangruihua/CLionProjects/demo/examples/GPIO/decoderISR.cpp
+
+CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/examples/GPIO/decoderISR.cpp > CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.i
+
+CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/examples/GPIO/decoderISR.cpp -o CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.s
+
+CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o: ../examples/GPIO/servo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o -c /Users/wangruihua/CLionProjects/demo/examples/GPIO/servo.cpp
+
+CMakeFiles/demo.dir/examples/GPIO/servo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/examples/GPIO/servo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/examples/GPIO/servo.cpp > CMakeFiles/demo.dir/examples/GPIO/servo.cpp.i
+
+CMakeFiles/demo.dir/examples/GPIO/servo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/examples/GPIO/servo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/examples/GPIO/servo.cpp -o CMakeFiles/demo.dir/examples/GPIO/servo.cpp.s
+
+CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o: ../examples/OpenCV/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o -c /Users/wangruihua/CLionProjects/demo/examples/OpenCV/main.cpp
+
+CMakeFiles/demo.dir/examples/OpenCV/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/examples/OpenCV/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/examples/OpenCV/main.cpp > CMakeFiles/demo.dir/examples/OpenCV/main.cpp.i
+
+CMakeFiles/demo.dir/examples/OpenCV/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/examples/OpenCV/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/examples/OpenCV/main.cpp -o CMakeFiles/demo.dir/examples/OpenCV/main.cpp.s
+
+CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o: ../examples/GPIO/demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o -c /Users/wangruihua/CLionProjects/demo/examples/GPIO/demo.cpp
+
+CMakeFiles/demo.dir/examples/GPIO/demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/examples/GPIO/demo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/examples/GPIO/demo.cpp > CMakeFiles/demo.dir/examples/GPIO/demo.cpp.i
+
+CMakeFiles/demo.dir/examples/GPIO/demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/examples/GPIO/demo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/examples/GPIO/demo.cpp -o CMakeFiles/demo.dir/examples/GPIO/demo.cpp.s
+
+CMakeFiles/demo.dir/simulator/Simulator.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/simulator/Simulator.cpp.o: ../simulator/Simulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/demo.dir/simulator/Simulator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/simulator/Simulator.cpp.o -c /Users/wangruihua/CLionProjects/demo/simulator/Simulator.cpp
+
+CMakeFiles/demo.dir/simulator/Simulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/simulator/Simulator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/simulator/Simulator.cpp > CMakeFiles/demo.dir/simulator/Simulator.cpp.i
+
+CMakeFiles/demo.dir/simulator/Simulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/simulator/Simulator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/simulator/Simulator.cpp -o CMakeFiles/demo.dir/simulator/Simulator.cpp.s
+
+CMakeFiles/demo.dir/simulator/main.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/simulator/main.cpp.o: ../simulator/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/demo.dir/simulator/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/simulator/main.cpp.o -c /Users/wangruihua/CLionProjects/demo/simulator/main.cpp
+
+CMakeFiles/demo.dir/simulator/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/simulator/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruihua/CLionProjects/demo/simulator/main.cpp > CMakeFiles/demo.dir/simulator/main.cpp.i
+
+CMakeFiles/demo.dir/simulator/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/simulator/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruihua/CLionProjects/demo/simulator/main.cpp -o CMakeFiles/demo.dir/simulator/main.cpp.s
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 
 # Object files for target demo
 demo_OBJECTS = \
@@ -197,8 +334,13 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o" \
 "CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o" \
 "CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o" \
+<<<<<<< HEAD
 "CMakeFiles/demo.dir/examples/OpenCV/Reader.cpp.o" \
 "CMakeFiles/demo.dir/examples/test.cpp.o"
+=======
+"CMakeFiles/demo.dir/simulator/Simulator.cpp.o" \
+"CMakeFiles/demo.dir/simulator/main.cpp.o"
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
@@ -211,11 +353,19 @@ demo: CMakeFiles/demo.dir/examples/GPIO/decoderISR.cpp.o
 demo: CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o
 demo: CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o
 demo: CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o
+<<<<<<< HEAD
 demo: CMakeFiles/demo.dir/examples/OpenCV/Reader.cpp.o
 demo: CMakeFiles/demo.dir/examples/test.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: CMakeFiles/demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable demo"
+=======
+demo: CMakeFiles/demo.dir/simulator/Simulator.cpp.o
+demo: CMakeFiles/demo.dir/simulator/main.cpp.o
+demo: CMakeFiles/demo.dir/build.make
+demo: CMakeFiles/demo.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable demo"
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -228,6 +378,10 @@ CMakeFiles/demo.dir/clean:
 .PHONY : CMakeFiles/demo.dir/clean
 
 CMakeFiles/demo.dir/depend:
+<<<<<<< HEAD
 	cd /Users/law/Desktop/小车/demo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/law/Desktop/小车/demo /Users/law/Desktop/小车/demo /Users/law/Desktop/小车/demo/cmake-build-debug /Users/law/Desktop/小车/demo/cmake-build-debug /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles/demo.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /Users/wangruihua/CLionProjects/demo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/wangruihua/CLionProjects/demo /Users/wangruihua/CLionProjects/demo /Users/wangruihua/CLionProjects/demo/cmake-build-debug /Users/wangruihua/CLionProjects/demo/cmake-build-debug /Users/wangruihua/CLionProjects/demo/cmake-build-debug/CMakeFiles/demo.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 .PHONY : CMakeFiles/demo.dir/depend
 

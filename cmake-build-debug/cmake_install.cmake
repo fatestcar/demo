@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /Users/law/Desktop/小车/demo
+=======
+# Install script for directory: /Users/wangruihua/CLionProjects/demo
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +44,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/Users/law/Desktop/小车/demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/Users/wangruihua/CLionProjects/demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

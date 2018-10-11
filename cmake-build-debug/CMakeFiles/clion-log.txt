@@ -1,8 +1,14 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/law/Desktop/小车/demo
-CMake Error at CMakeLists.txt:12 (target_link_libraries):
-  Cannot specify link libraries for target "_your_target_name_" which is not
-  built by this project.
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 2. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 6. Offending entry: >>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 223. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 233. Offending entry: >>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 243. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 247. Offending entry: >>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 320. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt on line 324. Offending entry: >>>>>>> 7b1f362a96eb3602464381ee7e809d433e29960f
+CMake Error: The current CMakeCache.txt directory /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeCache.txt is different than the directory /Users/wangruihua/CLionProjects/demo/cmake-build-debug where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source "/Users/law/Desktop/小车/demo/CMakeLists.txt" does not match the source "/Users/wangruihua/CLionProjects/demo/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+Cannot read project file /Users/law/Desktop/小车/demo/cmake-build-debug/demo.cbp
+Cannot read /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles/3.12.2/CMakeCCompiler.cmake
+Cannot read /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles/3.12.2/CMakeCXXCompiler.cmake
