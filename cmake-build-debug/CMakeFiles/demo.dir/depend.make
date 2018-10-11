@@ -19,5 +19,10 @@ CMakeFiles/demo.dir/examples/GPIO/demo.cpp.o: ../examples/GPIO/demo.cpp
 CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o: ../examples/GPIO/GPIOlib.h
 CMakeFiles/demo.dir/examples/GPIO/servo.cpp.o: ../examples/GPIO/servo.cpp
 
+CMakeFiles/demo.dir/examples/OpenCV/Reader.cpp.o: ../examples/OpenCV/Reader.cpp
+
+CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o: ../examples/OpenCV/GPIOlib.h
 CMakeFiles/demo.dir/examples/OpenCV/main.cpp.o: ../examples/OpenCV/main.cpp
+
+CMakeFiles/demo.dir/examples/test.cpp.o: ../examples/test.cpp
 

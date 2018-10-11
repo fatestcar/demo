@@ -5,7 +5,7 @@ PROJECT(LaneDetection_Demo)
 FIND_PACKAGE(OpenCV REQUIRED)
 
 SET(SRC
- main.cpp
+ Reader.cpp
 )
 
 SET(PROJECT_NAME

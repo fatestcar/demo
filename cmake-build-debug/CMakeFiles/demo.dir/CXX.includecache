@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/law/project/demo/Basic Principle/GPIO/DCmotors.cpp
+/Users/law/Desktop/小车/demo/Basic Principle/GPIO/DCmotors.cpp
 wiringPi.h
 -
 softPwm.h
 -
 
-/Users/law/project/demo/Basic Principle/GPIO/decoderISR.cpp
+/Users/law/Desktop/小车/demo/Basic Principle/GPIO/decoderISR.cpp
 cstdio
 -
 wiringPi.h
@@ -20,33 +20,35 @@ wiringPi.h
 softPwm.h
 -
 
-/Users/law/project/demo/Basic Principle/GPIO/servo.cpp
+/Users/law/Desktop/小车/demo/Basic Principle/GPIO/servo.cpp
 wiringPi.h
 -
 
-/Users/law/project/demo/examples/GPIO/DCmotors.cpp
+/Users/law/Desktop/小车/demo/examples/GPIO/DCmotors.cpp
 GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
+/Users/law/Desktop/小车/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
+/Users/law/Desktop/小车/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/examples/GPIO/decoderISR.cpp
+/Users/law/Desktop/小车/demo/examples/GPIO/decoderISR.cpp
 cstdio
 -
 cmath
 -
 GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
+/Users/law/Desktop/小车/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/examples/GPIO/demo.cpp
+/Users/law/Desktop/小车/demo/examples/GPIO/demo.cpp
 GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
+/Users/law/Desktop/小车/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/examples/GPIO/servo.cpp
+/Users/law/Desktop/小车/demo/examples/GPIO/servo.cpp
 GPIOlib.h
-/Users/law/project/demo/examples/GPIO/GPIOlib.h
+/Users/law/Desktop/小车/demo/examples/GPIO/GPIOlib.h
 
-/Users/law/project/demo/examples/OpenCV/main.cpp
+/Users/law/Desktop/小车/demo/examples/OpenCV/GPIOlib.h
+
+/Users/law/Desktop/小车/demo/examples/OpenCV/Reader.cpp
 cstdlib
 -
 iostream
@@ -58,5 +60,29 @@ opencv2/highgui.hpp
 opencv2/imgproc.hpp
 -
 opencv2/opencv.hpp
+-
+
+/Users/law/Desktop/小车/demo/examples/OpenCV/main.cpp
+cstdlib
+-
+iostream
+-
+vector
+-
+opencv2/highgui.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/opencv.hpp
+-
+GPIOlib.h
+/Users/law/Desktop/小车/demo/examples/OpenCV/GPIOlib.h
+thread
+-
+
+/Users/law/Desktop/小车/demo/examples/test.cpp
+Python.h
+-
+stdio.h
 -
 

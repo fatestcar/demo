@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/law/project/demo
+CMAKE_SOURCE_DIR = /Users/law/Desktop/小车/demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/law/project/demo/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/law/Desktop/小车/demo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/cmake-build-debug/CMakeFiles /Users/law/project/demo/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -312,6 +312,33 @@ examples/GPIO/servo.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/GPIO/servo.cpp.s
 .PHONY : examples/GPIO/servo.cpp.s
 
+examples/OpenCV/Reader.o: examples/OpenCV/Reader.cpp.o
+
+.PHONY : examples/OpenCV/Reader.o
+
+# target to build an object file
+examples/OpenCV/Reader.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/Reader.cpp.o
+.PHONY : examples/OpenCV/Reader.cpp.o
+
+examples/OpenCV/Reader.i: examples/OpenCV/Reader.cpp.i
+
+.PHONY : examples/OpenCV/Reader.i
+
+# target to preprocess a source file
+examples/OpenCV/Reader.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/Reader.cpp.i
+.PHONY : examples/OpenCV/Reader.cpp.i
+
+examples/OpenCV/Reader.s: examples/OpenCV/Reader.cpp.s
+
+.PHONY : examples/OpenCV/Reader.s
+
+# target to generate assembly for a file
+examples/OpenCV/Reader.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/Reader.cpp.s
+.PHONY : examples/OpenCV/Reader.cpp.s
+
 examples/OpenCV/main.o: examples/OpenCV/main.cpp.o
 
 .PHONY : examples/OpenCV/main.o
@@ -338,6 +365,33 @@ examples/OpenCV/main.s: examples/OpenCV/main.cpp.s
 examples/OpenCV/main.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/OpenCV/main.cpp.s
 .PHONY : examples/OpenCV/main.cpp.s
+
+examples/test.o: examples/test.cpp.o
+
+.PHONY : examples/test.o
+
+# target to build an object file
+examples/test.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/test.cpp.o
+.PHONY : examples/test.cpp.o
+
+examples/test.i: examples/test.cpp.i
+
+.PHONY : examples/test.i
+
+# target to preprocess a source file
+examples/test.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/test.cpp.i
+.PHONY : examples/test.cpp.i
+
+examples/test.s: examples/test.cpp.s
+
+.PHONY : examples/test.s
+
+# target to generate assembly for a file
+examples/test.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/examples/test.cpp.s
+.PHONY : examples/test.cpp.s
 
 # Help Target
 help:
@@ -369,9 +423,15 @@ help:
 	@echo "... examples/GPIO/servo.o"
 	@echo "... examples/GPIO/servo.i"
 	@echo "... examples/GPIO/servo.s"
+	@echo "... examples/OpenCV/Reader.o"
+	@echo "... examples/OpenCV/Reader.i"
+	@echo "... examples/OpenCV/Reader.s"
 	@echo "... examples/OpenCV/main.o"
 	@echo "... examples/OpenCV/main.i"
 	@echo "... examples/OpenCV/main.s"
+	@echo "... examples/test.o"
+	@echo "... examples/test.i"
+	@echo "... examples/test.s"
 .PHONY : help
 
 

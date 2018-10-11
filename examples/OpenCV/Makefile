@@ -48,10 +48,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/law/project/demo/examples/OpenCV
+CMAKE_SOURCE_DIR = /Users/law/Desktop/小车/demo/examples/OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/law/project/demo/examples/OpenCV
+CMAKE_BINARY_DIR = /Users/law/Desktop/小车/demo/examples/OpenCV
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/examples/OpenCV/CMakeFiles /Users/law/project/demo/examples/OpenCV/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/Desktop/小车/demo/examples/OpenCV/CMakeFiles /Users/law/Desktop/小车/demo/examples/OpenCV/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/project/demo/examples/OpenCV/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/law/Desktop/小车/demo/examples/OpenCV/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-main.o: main.cpp.o
+Reader.o: Reader.cpp.o
 
-.PHONY : main.o
+.PHONY : Reader.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.o
-.PHONY : main.cpp.o
+Reader.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Reader.cpp.o
+.PHONY : Reader.cpp.o
 
-main.i: main.cpp.i
+Reader.i: Reader.cpp.i
 
-.PHONY : main.i
+.PHONY : Reader.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.i
-.PHONY : main.cpp.i
+Reader.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Reader.cpp.i
+.PHONY : Reader.cpp.i
 
-main.s: main.cpp.s
+Reader.s: Reader.cpp.s
 
-.PHONY : main.s
+.PHONY : Reader.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.s
-.PHONY : main.cpp.s
+Reader.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Reader.cpp.s
+.PHONY : Reader.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... demo"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Reader.o"
+	@echo "... Reader.i"
+	@echo "... Reader.s"
 .PHONY : help
 
 

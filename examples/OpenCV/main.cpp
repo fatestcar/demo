@@ -24,7 +24,7 @@ const string CANNY_WINDOW_NAME="Canny";
 
 const int CANNY_LOWER_BOUND=50;
 const int CANNY_UPPER_BOUND=250;
-const int HOUGH_THRESHOLD=150;
+const int HOUGH_THRESHOLD=600;
 
 const double Kp = 0.5;
 const double Ki = 0.2;

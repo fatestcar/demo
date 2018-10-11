@@ -1,4 +1,8 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/law/project/demo
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/law/project/demo/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/law/Desktop/小车/demo
+CMake Error at CMakeLists.txt:12 (target_link_libraries):
+  Cannot specify link libraries for target "_your_target_name_" which is not
+  built by this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/law/Desktop/小车/demo/cmake-build-debug/CMakeFiles/CMakeOutput.log".
